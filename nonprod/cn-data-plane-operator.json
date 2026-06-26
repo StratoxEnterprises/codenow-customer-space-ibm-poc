@@ -1,0 +1,60 @@
+{
+  "$schema": "https://codenow-com.github.io/codenow-cli/schemas/cn-data-plane-operator-config.v1.schema.json",
+  "ContainerRegistry": {
+    "Hostname": "codenow-codenow-data-plane.jfrog.io",
+    "Username": "enc:v1:/25ndi4m8tS/aiyHmTHxqAADDUB0QKxe18aXwXHbJxBQTLFMNAXMQEGV5atFEds\u002BiiKnfog7lWP5/yWnO2dh1p/tZVedf54OWQ==",
+    "Password": "enc:v1:3UH6ZP94WtMPpmPuGynWKQADDUDZ8CWFcl7dhihZL85uS0CXmvX\u002BrvE7xdI0\u002B4yR1SD63WXBX9Nq8JSfL7q9QrVzHxy0cX4BnLfbpYZYD1Y="
+  },
+  "NpmRegistry": {
+    "Url": "https://codenow.jfrog.io/artifactory/api/npm/stxcn-npm",
+    "AccessToken": "enc:v1:GwhC8fHu04HNs2k7iVkGDQADDUAXUaG\u002Ba4k4Db7sjBzmus5FR6/Jsd0sZX/doqaGBKU9UcisKTl9kZVwuF3xhqsBGpdfQ7Vkmqx7NGD6Zc0p/qiKr3xJy/a6jYb6AlygHfZEziPKRGw3kpo1c0iCYL9HIPzHveugQoINYN\u002BEKSx81NCQUSiJTUUcz72KBo\u002BnVlO1f3KtlviGUFdc9t7GX4S2l2bcXhwDylmoMk5R9EKePunxZZrrxWw1kJDQM9885xsypk\u002B/1y8auJg6PGH382oQQayUTlwBCWitdlaEt9cGnldws/RQk4lVAku/l27nqCB1YeIyyoefpRdA3G9zIQ9swpLuJaLTTaqcmwUj1d5o4QmuK2kXpfjXf3EbFAkIYMpRYj7JSKT\u002B9ntAxeKcR\u002BVyUJl/kltDZjDy4m2rtn9ZC5iIcD5PZJZJva35H8KE9sTdthF6yeKy84eD11O\u002BE/trAqpXPyAMgQUxPSYsC3gGOBkFqINPLqvYjm/OkvqlCJEuInWHs05l59HEe1lAbEdbymcMph4Ho8PZcV4A2zrb8/IyGYFc9AtROk1lY/NDL4tduubVZ7Xg7phvGpUpGzckQrGejym9ezCDicmmszHFrtHO0umZ4A5M49J6BBz\u002BrN8cnNGGu4v/jJwTgNkg2NNiZptAYGpjmO8wV1DYH2bqNX\u002BGsNv0dFSu16TRltFmH579H/jQfF6M019em/4mqiPjcjaVJoZDrze81DylXw/ZKv1Kb0mXN9KwPRvNvYw0VAuFCH/zp3/yJP4TGJVGrpCDt23dWzJQoTk\u002BYFrXZLOdWYhPActh5sTahtf1hew3trU1QFoIAvBej1sCa82YEghNX7/jlhJfvvuyCAdBE1\u002BqwHX7XAVFzGHuh70MG9uTaDy5k57GwsJgcPLG4796U/tnB72pXqspomujB2\u002B\u002BNkSg3e5FaTfDIbTXPgb\u002BOiCSPaxu8ilQ1wrucADncxCW1wIig7lka5WxU2jCAACvf\u002BiSNXG7oBa8CbfLNUHHn\u002BC3Q2FOuOQhpHqBQy30B2eWTwxTXzZ1a8cJxkc7SLo85bQ9WWeZNpVUt51pQoEkL5FOyhNUZsE="
+  },
+  "Kubernetes": {
+    "Namespaces": {
+      "System": {
+        "Name": "cn-data-plane-system"
+      },
+      "Cni": {
+        "Name": "cn-data-plane-system"
+      },
+      "CiPipelines": {
+        "Name": "cn-data-plane-system"
+      }
+    },
+    "NodeLabels": {
+      "System": {
+        "Key": "codenow.com/node-type",
+        "Value": "all"
+      },
+      "Application": {
+        "Key": "codenow.com/node-type",
+        "Value": "all"
+      }
+    },
+    "PodPlacementMode": "PodNodeSelector",
+    "SecurityContextRunAsId": 1000930000
+  },
+  "HttpProxy": {
+    "Enabled": false
+  },
+  "S3": {
+    "Enabled": false
+  },
+  "Scm": {
+    "Url": "https://github.com/StratoxEnterprises/codenow-customer-space-ibm-poc",
+    "AuthenticationMethod": "AccessToken",
+    "AccessToken": "enc:v1:UBOJsqfPY/zKD8nEBZGhagADDUAxpjfe1M9cvamHZlVZOuLOlHenW7PW4kziw7jwYSoNXdS3XDIcRHaOGTaBI0W4jFGt1hFSlfY48ybOVuUL4annlmjVbDv/pO9SMcBIl5QAxEL5\u002BiiEiFEd7hmFpphwtqW/zCKC4vVye\u002BaUlxgm8WGgsMYM3E0PsABh"
+  },
+  "Environment": {
+    "Name": "nonprod"
+  },
+  "Pulumi": {
+    "Images": {
+      "RuntimeVersion": "1.0.0",
+      "PluginsVersion": "1.1.1"
+    },
+    "InstallCrds": true,
+    "Passphrase": "enc:v1:CuvmN/p/SJu1M63vAKRy3QADDUA9ZslkomSjEMibVwVlJlsyFaAkFkztZ\u002BA773tlxFb\u002B0\u002BNtRQA85Xot/Fo4/B5hphY8pzvhAwTzuDH/l3SAJbtBwAIwI9xb264="
+  },
+  "Security": {}
+}

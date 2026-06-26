@@ -1,0 +1,20 @@
+{
+    "name": "ibm-poc-nonprod",
+    "main": "./dist/cn-data-plane.js",
+    "type": "module",
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "@codenow/data-plane": "2.10.4",
+        "@pulumi/kubernetes": "4.31.1",
+        "@pulumi/pulumi": "3.244.0",
+        "ts-node": "10.9.2"
+    },
+    "devDependencies": {
+        "typescript": "5.3.3"
+    },
+    "files": [
+        "cn-data-plane.ts"
+    ]
+}
