@@ -1,0 +1,3 @@
+*.tfvars filter=git-crypt diff=git-crypt
+all.yaml filter=git-crypt diff=git-crypt
+*-credentials.json filter=git-crypt diff=git-crypt
