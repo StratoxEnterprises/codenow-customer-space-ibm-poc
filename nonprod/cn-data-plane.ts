@@ -144,6 +144,6 @@ new dataplane.BootstrapBuilder()
     .enable()
     .build()
   .clusterAuthentication()
-    .disable()
+    .enable()
     .build()
   .build();
